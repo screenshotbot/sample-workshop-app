@@ -35,4 +35,5 @@ jobs:
           ~/screenshotbot/recorder \
             --directory SampleWorkshopAppTests/__Snapshots__/ \
             --channel prefire-sample-app \
-            --main-branch main
+            --main-branch main \
+            --recursive

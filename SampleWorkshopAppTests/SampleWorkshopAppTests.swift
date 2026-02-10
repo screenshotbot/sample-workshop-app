@@ -2,11 +2,10 @@
 //  SampleWorkshopAppTests.swift
 //  SampleWorkshopAppTests
 //
-//  Created by Arnold Noronha on 2/9/26.
+//  Created by Piotr Knapczyk on 10/02/2026.
 //
 
 import Testing
-@testable import SampleWorkshopApp
 
 struct SampleWorkshopAppTests {
 

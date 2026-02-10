@@ -9,19 +9,12 @@
 /* Begin PBXBuildFile section */
 		A74FDA202F3A2674000A32F5 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A74FDA212F3A2674000A32F5 /* DesignSystem */; };
 		A76743C92F3B5AE800A159CE /* Prefire in Frameworks */ = {isa = PBXBuildFile; productRef = A76743C82F3B5AE800A159CE /* Prefire */; };
-		A77C109B2F3B50BE00D973E3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A77C109A2F3B50BE00D973E3 /* SnapshotTesting */; };
 		A77C10A02F3B531200D973E3 /* Prefire in Frameworks */ = {isa = PBXBuildFile; productRef = A77C109F2F3B531200D973E3 /* Prefire */; };
+		A7BA1DFA2F3B64C900BD56A5 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A7BA1DF92F3B64C900BD56A5 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A74FD9F72F3A2673000A32F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A74FD9E12F3A2672000A32F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A74FD9E82F3A2672000A32F5;
-			remoteInfo = SampleWorkshopApp;
-		};
-		A74FDA012F3A2673000A32F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A74FD9E12F3A2672000A32F5 /* Project object */;
 			proxyType = 1;
@@ -33,7 +26,6 @@
 /* Begin PBXFileReference section */
 		A74FD9E92F3A2672000A32F5 /* SampleWorkshopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWorkshopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWorkshopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWorkshopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -69,14 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A77C10A02F3B531200D973E3 /* Prefire in Frameworks */,
-				A77C109B2F3B50BE00D973E3 /* SnapshotTesting in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A74FD9FD2F3A2673000A32F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A7BA1DFA2F3B64C900BD56A5 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +84,6 @@
 			children = (
 				A74FD9E92F3A2672000A32F5 /* SampleWorkshopApp.app */,
 				A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */,
-				A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,35 +141,12 @@
 			);
 			name = SampleWorkshopAppTests;
 			packageProductDependencies = (
-				A77C109A2F3B50BE00D973E3 /* SnapshotTesting */,
 				A77C109F2F3B531200D973E3 /* Prefire */,
+				A7BA1DF92F3B64C900BD56A5 /* SnapshotTesting */,
 			);
 			productName = SampleWorkshopAppTests;
 			productReference = A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A74FD9FF2F3A2673000A32F5 /* SampleWorkshopAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A74FDA102F3A2673000A32F5 /* Build configuration list for PBXNativeTarget "SampleWorkshopAppUITests" */;
-			buildPhases = (
-				A74FD9FC2F3A2673000A32F5 /* Sources */,
-				A74FD9FD2F3A2673000A32F5 /* Frameworks */,
-				A74FD9FE2F3A2673000A32F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A74FDA022F3A2673000A32F5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A74FDA032F3A2673000A32F5 /* SampleWorkshopAppUITests */,
-			);
-			name = SampleWorkshopAppUITests;
-			packageProductDependencies = (
-			);
-			productName = SampleWorkshopAppUITests;
-			productReference = A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,10 +165,6 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = A74FD9E82F3A2672000A32F5;
 					};
-					A74FD9FF2F3A2673000A32F5 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = A74FD9E82F3A2672000A32F5;
-					};
 				};
 			};
 			buildConfigurationList = A74FD9E42F3A2672000A32F5 /* Build configuration list for PBXProject "SampleWorkshopApp" */;
@@ -221,8 +178,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A74FDA222F3A2674000A32F5 /* XCLocalSwiftPackageReference "DesignSystem" */,
-				A77C10982F3B507E00D973E3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				A77C109C2F3B512B00D973E3 /* XCRemoteSwiftPackageReference "Prefire" */,
+				A7BA1DF82F3B64B800BD56A5 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A74FD9EA2F3A2672000A32F5 /* Products */;
@@ -231,7 +188,6 @@
 			targets = (
 				A74FD9E82F3A2672000A32F5 /* SampleWorkshopApp */,
 				A74FD9F52F3A2673000A32F5 /* SampleWorkshopAppTests */,
-				A74FD9FF2F3A2673000A32F5 /* SampleWorkshopAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,13 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A74FD9F42F3A2673000A32F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A74FD9FE2F3A2673000A32F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,13 +224,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A74FD9FC2F3A2673000A32F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,11 +231,6 @@
 			isa = PBXTargetDependency;
 			target = A74FD9E82F3A2672000A32F5 /* SampleWorkshopApp */;
 			targetProxy = A74FD9F72F3A2673000A32F5 /* PBXContainerItemProxy */;
-		};
-		A74FDA022F3A2673000A32F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A74FD9E82F3A2672000A32F5 /* SampleWorkshopApp */;
-			targetProxy = A74FDA012F3A2673000A32F5 /* PBXContainerItemProxy */;
 		};
 		A77C109E2F3B514E00D973E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -511,38 +448,6 @@
 			};
 			name = Release;
 		};
-		A74FDA112F3A2673000A32F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SampleWorkshopAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SampleWorkshopApp;
-			};
-			name = Debug;
-		};
-		A74FDA122F3A2673000A32F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SampleWorkshopAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SampleWorkshopApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,15 +478,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A74FDA102F3A2673000A32F5 /* Build configuration list for PBXNativeTarget "SampleWorkshopAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A74FDA112F3A2673000A32F5 /* Debug */,
-				A74FDA122F3A2673000A32F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -592,20 +488,20 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A77C10982F3B507E00D973E3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.18.9;
-			};
-		};
 		A77C109C2F3B512B00D973E3 /* XCRemoteSwiftPackageReference "Prefire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/BarredEwe/Prefire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.4.1;
+			};
+		};
+		A7BA1DF82F3B64B800BD56A5 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tdrhq/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = "1.18.6-sb";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -620,11 +516,6 @@
 			package = A77C109C2F3B512B00D973E3 /* XCRemoteSwiftPackageReference "Prefire" */;
 			productName = Prefire;
 		};
-		A77C109A2F3B50BE00D973E3 /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A77C10982F3B507E00D973E3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
-		};
 		A77C109D2F3B514E00D973E3 /* PrefireTestsPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A77C109C2F3B512B00D973E3 /* XCRemoteSwiftPackageReference "Prefire" */;
@@ -634,6 +525,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A77C109C2F3B512B00D973E3 /* XCRemoteSwiftPackageReference "Prefire" */;
 			productName = Prefire;
+		};
+		A7BA1DF92F3B64C900BD56A5 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BA1DF82F3B64B800BD56A5 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

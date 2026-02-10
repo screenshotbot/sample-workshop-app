@@ -1,0 +1,3 @@
+test_configuration:
+    template_file_path: custom_template.stencil
+

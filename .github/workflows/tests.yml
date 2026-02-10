@@ -20,5 +20,6 @@ jobs:
           xcodebuild test \
             -scheme SampleWorkshopApp \
             -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -skipPackagePluginValidation \
             -skip-testing:SampleWorkshopAppUITests \
             -resultBundlePath TestResults.xcresult

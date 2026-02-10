@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A74FDA202F3A2674000A32F5 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A74FDA212F3A2674000A32F5 /* DesignSystem */; };
+		A76743C92F3B5AE800A159CE /* Prefire in Frameworks */ = {isa = PBXBuildFile; productRef = A76743C82F3B5AE800A159CE /* Prefire */; };
 		A77C109B2F3B50BE00D973E3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A77C109A2F3B50BE00D973E3 /* SnapshotTesting */; };
 		A77C10A02F3B531200D973E3 /* Prefire in Frameworks */ = {isa = PBXBuildFile; productRef = A77C109F2F3B531200D973E3 /* Prefire */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76743C92F3B5AE800A159CE /* Prefire in Frameworks */,
 				A74FDA202F3A2674000A32F5 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +132,7 @@
 			name = SampleWorkshopApp;
 			packageProductDependencies = (
 				A74FDA212F3A2674000A32F5 /* DesignSystem */,
+				A76743C82F3B5AE800A159CE /* Prefire */,
 			);
 			productName = SampleWorkshopApp;
 			productReference = A74FD9E92F3A2672000A32F5 /* SampleWorkshopApp.app */;
@@ -611,6 +614,11 @@
 		A74FDA212F3A2674000A32F5 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
+		};
+		A76743C82F3B5AE800A159CE /* Prefire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A77C109C2F3B512B00D973E3 /* XCRemoteSwiftPackageReference "Prefire" */;
+			productName = Prefire;
 		};
 		A77C109A2F3B50BE00D973E3 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;

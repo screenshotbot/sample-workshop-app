@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A74FDA202F3A2674000A32F5 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A74FDA212F3A2674000A32F5 /* DesignSystem */; };
+		A77C109B2F3B50BE00D973E3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A77C109A2F3B50BE00D973E3 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77C109B2F3B50BE00D973E3 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 				A74FD9EB2F3A2672000A32F5 /* SampleWorkshopApp */,
 				A74FD9F92F3A2673000A32F5 /* SampleWorkshopAppTests */,
 				A74FDA032F3A2673000A32F5 /* SampleWorkshopAppUITests */,
+				A77C10992F3B50BE00D973E3 /* Frameworks */,
 				A74FD9EA2F3A2672000A32F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +98,13 @@
 				A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A77C10992F3B50BE00D973E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +151,7 @@
 			);
 			name = SampleWorkshopAppTests;
 			packageProductDependencies = (
+				A77C109A2F3B50BE00D973E3 /* SnapshotTesting */,
 			);
 			productName = SampleWorkshopAppTests;
 			productReference = A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */;
@@ -203,6 +214,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A74FDA222F3A2674000A32F5 /* XCLocalSwiftPackageReference "DesignSystem" */,
+				A77C10982F3B507E00D973E3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A74FD9EA2F3A2672000A32F5 /* Products */;
@@ -567,10 +579,26 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A77C10982F3B507E00D973E3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.18.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		A74FDA212F3A2674000A32F5 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
+		};
+		A77C109A2F3B50BE00D973E3 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A77C10982F3B507E00D973E3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

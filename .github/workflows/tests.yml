@@ -23,3 +23,15 @@ jobs:
             -skipPackagePluginValidation \
             -skip-testing:SampleWorkshopAppUITests \
             -resultBundlePath TestResults.xcresult
+
+      - name: Download Screenshotbot recorder
+        run: curl https://screenshotbot.io/recorder.sh | sh
+
+      - name: Upload to Screenshotbot
+        env:
+          SCREENSHOTBOT_API_KEY: ${{ secrets.SCREENSHOTBOT_API_KEY }}
+          SCREENSHOTBOT_API_SECRET: ${{ secrets.SCREENSHOTBOT_API_SECRET }}
+        run: |
+          ~/screenshotbot/recorder \
+            --directory SampleWorkshopAppTests/__Snapshots__/ \
+            --channel prefire-sample-app

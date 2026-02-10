@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ED0894B2F3B50BC0009DAB3 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 7ED0894A2F3B50BC0009DAB3 /* SnapshotTesting */; };
+		7ED089512F3B531E0009DAB3 /* Prefire in Frameworks */ = {isa = PBXBuildFile; productRef = 7ED089502F3B531E0009DAB3 /* Prefire */; };
+		7ED089712F3B5AE00009DAB3 /* Prefire in Frameworks */ = {isa = PBXBuildFile; productRef = 7ED089702F3B5AE00009DAB3 /* Prefire */; };
 		A74FDA202F3A2674000A32F5 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A74FDA212F3A2674000A32F5 /* DesignSystem */; };
 /* End PBXBuildFile section */
 
@@ -18,19 +21,11 @@
 			remoteGlobalIDString = A74FD9E82F3A2672000A32F5;
 			remoteInfo = SampleWorkshopApp;
 		};
-		A74FDA012F3A2673000A32F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A74FD9E12F3A2672000A32F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A74FD9E82F3A2672000A32F5;
-			remoteInfo = SampleWorkshopApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A74FD9E92F3A2672000A32F5 /* SampleWorkshopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWorkshopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWorkshopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleWorkshopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -56,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED089712F3B5AE00009DAB3 /* Prefire in Frameworks */,
 				A74FDA202F3A2674000A32F5 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,25 +60,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A74FD9FD2F3A2673000A32F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7ED089512F3B531E0009DAB3 /* Prefire in Frameworks */,
+				7ED0894B2F3B50BC0009DAB3 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ED0894F2F3B531E0009DAB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A74FD9E02F3A2672000A32F5 = {
 			isa = PBXGroup;
 			children = (
 				A74FD9EB2F3A2672000A32F5 /* SampleWorkshopApp */,
 				A74FD9F92F3A2673000A32F5 /* SampleWorkshopAppTests */,
 				A74FDA032F3A2673000A32F5 /* SampleWorkshopAppUITests */,
+				7ED0894F2F3B531E0009DAB3 /* Frameworks */,
 				A74FD9EA2F3A2672000A32F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,7 +91,6 @@
 			children = (
 				A74FD9E92F3A2672000A32F5 /* SampleWorkshopApp.app */,
 				A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */,
-				A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +116,7 @@
 			name = SampleWorkshopApp;
 			packageProductDependencies = (
 				A74FDA212F3A2674000A32F5 /* DesignSystem */,
+				7ED089702F3B5AE00009DAB3 /* Prefire */,
 			);
 			productName = SampleWorkshopApp;
 			productReference = A74FD9E92F3A2672000A32F5 /* SampleWorkshopApp.app */;
@@ -134,6 +133,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7ED0894E2F3B52EE0009DAB3 /* PBXTargetDependency */,
 				A74FD9F82F3A2673000A32F5 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
@@ -141,33 +141,12 @@
 			);
 			name = SampleWorkshopAppTests;
 			packageProductDependencies = (
+				7ED0894A2F3B50BC0009DAB3 /* SnapshotTesting */,
+				7ED089502F3B531E0009DAB3 /* Prefire */,
 			);
 			productName = SampleWorkshopAppTests;
 			productReference = A74FD9F62F3A2673000A32F5 /* SampleWorkshopAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A74FD9FF2F3A2673000A32F5 /* SampleWorkshopAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A74FDA102F3A2673000A32F5 /* Build configuration list for PBXNativeTarget "SampleWorkshopAppUITests" */;
-			buildPhases = (
-				A74FD9FC2F3A2673000A32F5 /* Sources */,
-				A74FD9FD2F3A2673000A32F5 /* Frameworks */,
-				A74FD9FE2F3A2673000A32F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A74FDA022F3A2673000A32F5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A74FDA032F3A2673000A32F5 /* SampleWorkshopAppUITests */,
-			);
-			name = SampleWorkshopAppUITests;
-			packageProductDependencies = (
-			);
-			productName = SampleWorkshopAppUITests;
-			productReference = A74FDA002F3A2673000A32F5 /* SampleWorkshopAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -186,10 +165,6 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = A74FD9E82F3A2672000A32F5;
 					};
-					A74FD9FF2F3A2673000A32F5 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = A74FD9E82F3A2672000A32F5;
-					};
 				};
 			};
 			buildConfigurationList = A74FD9E42F3A2672000A32F5 /* Build configuration list for PBXProject "SampleWorkshopApp" */;
@@ -203,6 +178,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A74FDA222F3A2674000A32F5 /* XCLocalSwiftPackageReference "DesignSystem" */,
+				7ED089492F3B50BC0009DAB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				7ED0894C2F3B52DA0009DAB3 /* XCRemoteSwiftPackageReference "Prefire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A74FD9EA2F3A2672000A32F5 /* Products */;
@@ -211,7 +188,6 @@
 			targets = (
 				A74FD9E82F3A2672000A32F5 /* SampleWorkshopApp */,
 				A74FD9F52F3A2673000A32F5 /* SampleWorkshopAppTests */,
-				A74FD9FF2F3A2673000A32F5 /* SampleWorkshopAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A74FD9F42F3A2673000A32F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A74FD9FE2F3A2673000A32F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,25 +224,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A74FD9FC2F3A2673000A32F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7ED0894E2F3B52EE0009DAB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 7ED0894D2F3B52EE0009DAB3 /* PrefireTestsPlugin */;
+		};
 		A74FD9F82F3A2673000A32F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A74FD9E82F3A2672000A32F5 /* SampleWorkshopApp */;
 			targetProxy = A74FD9F72F3A2673000A32F5 /* PBXContainerItemProxy */;
-		};
-		A74FDA022F3A2673000A32F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A74FD9E82F3A2672000A32F5 /* SampleWorkshopApp */;
-			targetProxy = A74FDA012F3A2673000A32F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -487,38 +448,6 @@
 			};
 			name = Release;
 		};
-		A74FDA112F3A2673000A32F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SampleWorkshopAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SampleWorkshopApp;
-			};
-			name = Debug;
-		};
-		A74FDA122F3A2673000A32F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SampleWorkshopAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SampleWorkshopApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,15 +478,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A74FDA102F3A2673000A32F5 /* Build configuration list for PBXNativeTarget "SampleWorkshopAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A74FDA112F3A2673000A32F5 /* Debug */,
-				A74FDA122F3A2673000A32F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -567,7 +487,46 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		7ED089492F3B50BC0009DAB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tdrhq/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = "1.18.6-sb";
+			};
+		};
+		7ED0894C2F3B52DA0009DAB3 /* XCRemoteSwiftPackageReference "Prefire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BarredEwe/Prefire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		7ED0894A2F3B50BC0009DAB3 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ED089492F3B50BC0009DAB3 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		7ED0894D2F3B52EE0009DAB3 /* PrefireTestsPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ED0894C2F3B52DA0009DAB3 /* XCRemoteSwiftPackageReference "Prefire" */;
+			productName = "plugin:PrefireTestsPlugin";
+		};
+		7ED089502F3B531E0009DAB3 /* Prefire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ED0894C2F3B52DA0009DAB3 /* XCRemoteSwiftPackageReference "Prefire" */;
+			productName = Prefire;
+		};
+		7ED089702F3B5AE00009DAB3 /* Prefire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ED0894C2F3B52DA0009DAB3 /* XCRemoteSwiftPackageReference "Prefire" */;
+			productName = Prefire;
+		};
 		A74FDA212F3A2674000A32F5 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
